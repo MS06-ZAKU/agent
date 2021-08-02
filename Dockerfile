@@ -20,7 +20,7 @@ RUN systemctl enable httpd
 # Upload to jennkins workspace /tmp 
 # Change below text "appdynamics-php-agent.x86_64-21.7.0.4560.zip"
 #
-COPY /tmp/appdynamics-php-agent.x86_64-21.7.0.4560.zip /tmp
+ADD /tmp/appdynamics-php-agent.x86_64-21.7.0.4560.zip /tmp
 RUN unzip /tmp/appdynamics-php-agent.x86_64-21.7.0.4560.zip
 RUN chmod +x /tmp/appdynamics-php-agent-linux_x64/runme.sh
 RUN /tmp/appdynamics-php-agent-linux_x64/runme.sh
