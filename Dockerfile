@@ -17,7 +17,7 @@ RUN sed -i -e "s|;date.timezone =|date.timezone = Asia/Tokyo|" /etc/php.ini
 RUN systemctl enable httpd
 #
 # If update Appdynamics agent 
-# Upload to /tmp 
+# Upload to jennkins workspace /tmp 
 # Change below text "appdynamics-php-agent.x86_64-21.7.0.4560.zip"
 #
 COPY /tmp/appdynamics-php-agent.x86_64-21.7.0.4560.zip /tmp
